@@ -68,7 +68,7 @@ YEAR="$(get_year)"
 MONTH="$(get_month)"
 DAY="$(get_day)"
 
-NIGHTLY_BASEDIR="http://miroir.linuxtricks.fr/nightly/"
+NIGHTLY_BASEDIR="http://mirror.koddos.net/calculate-linux/nightly/"
 ISO_ROOT="${NIGHTLY_BASEDIR}/${YEAR}${MONTH}${DAY}"
 
 while [[ "$(curl -o /dev/null -sSL "${ISO_ROOT}" -w "%{http_code}")" == "404" ]]
